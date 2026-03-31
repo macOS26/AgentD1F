@@ -1,13 +1,6 @@
-# D1F MultiLineDiff
+# AgentD1F
 
-## Updated in the Last Two Days
-
-- Added new algorithm selection options
-- Improved performance monitoring
-
----
-
-# Swift D1F MultiLineDiff Package Usage Guide
+Multi-line diff engine with Flash, Megatron, and Optimus algorithms for Swift.
 
 ## ✅ Interactive Demo
 
