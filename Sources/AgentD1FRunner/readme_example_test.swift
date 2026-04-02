@@ -1,7 +1,7 @@
 import AgentD1F
 
 /// Test README Example 3 to verify the algorithm differences are accurate
-public func demonstrateReadmeExample3() {
+public func demonstrateReadmeExample3() throws {
     print("\n🔍 README Example 3 Verification")
     print("=================================")
     
@@ -32,7 +32,7 @@ func processUser() -> User {
 
     // Test Zoom Algorithm
     let brusDiff = MultiLineDiff.createDiff(source: source, destination: destination, algorithm: .zoom)
-    let brusResult = try! MultiLineDiff.applyDiff(to: source, diff: brusDiff)
+    let brusResult = try MultiLineDiff.applyDiff(to: source, diff: brusDiff)
 
     print("🔥 \(AlgorithmNames.zoom) Algorithm - Bulk Operations:")
     print("Total Operations: \(brusDiff.operations.count)")
@@ -51,7 +51,7 @@ func processUser() -> User {
 
     // Test Todd Algorithm
     let toddDiff = MultiLineDiff.createDiff(source: source, destination: destination, algorithm: .megatron)
-    let toddResult = try! MultiLineDiff.applyDiff(to: source, diff: toddDiff)
+    let toddResult = try MultiLineDiff.applyDiff(to: source, diff: toddDiff)
 
     print("🧠 \(AlgorithmNames.megatron) Algorithm - Line-Aware Operations:")
     print("Total Operations: \(toddDiff.operations.count)")
@@ -90,18 +90,18 @@ func processUser() -> User {
 }
 
 /// Demonstrate SmartDiff Base64 Methods
-public func demonstrateSmartDiffBase64Methods() {
+public func demonstrateSmartDiffBase64Methods() throws {
     let source = "Hello, world!"
     let destination = "Hello, Swift world!"
     
     // Test new createBase64SmartDiff method
-    let base64SmartDiff = try! MultiLineDiff.createBase64Diff(source: source, destination: destination)
+    let base64SmartDiff = try MultiLineDiff.createBase64Diff(source: source, destination: destination)
     
     // Test new applyBase64SmartDiffWithVerify method  
-    let result = try! MultiLineDiff.applyBase64Diff(to: source, base64Diff: base64SmartDiff)
+    let result = try MultiLineDiff.applyBase64Diff(to: source, base64Diff: base64SmartDiff)
     
     // Also test with applyBase64SmartDiff (existing method)
-    let result2 = try! MultiLineDiff.applyBase64Diff(to: source, base64Diff: base64SmartDiff)
+    let result2 = try MultiLineDiff.applyBase64Diff(to: source, base64Diff: base64SmartDiff)
     
     print("Base64 diff created and applied successfully")
     print("Result 1 matches: \(result == destination)")

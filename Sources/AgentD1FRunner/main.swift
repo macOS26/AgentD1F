@@ -1348,14 +1348,14 @@ func main() throws {
     print("\n" + String(repeating: "=", count: 50))
     print("Running test: SmartDiff Base64 Methods")
     runTest("SmartDiff Base64 Methods") {
-        demonstrateSmartDiffBase64Methods()
+        try demonstrateSmartDiffBase64Methods()
         return true
     }
 
     print("\n" + String(repeating: "=", count: 50))
     print("Running test: README Example 3 Algorithm Verification")
     runTest("README Example 3 Algorithm Verification") {
-        demonstrateReadmeExample3()
+        try demonstrateReadmeExample3()
         return true
     }
     
