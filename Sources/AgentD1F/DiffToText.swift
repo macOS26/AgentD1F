@@ -187,8 +187,13 @@ class DiffProcessor {
 
 struct StringHelper {
     static func extractSubstring(from text: String, start: Int, length: Int) -> String {
-        let startIndex = text.index(text.startIndex, offsetBy: start)
-        let endIndex = text.index(startIndex, offsetBy: length)
+        // Clamp to bounds — a malformed diff (retain/delete count past EOF) must
+        // not trap on String.index(_:offsetBy:).
+        guard start >= 0, length > 0,
+              let startIndex = text.index(text.startIndex, offsetBy: start, limitedBy: text.endIndex) else {
+            return ""
+        }
+        let endIndex = text.index(startIndex, offsetBy: length, limitedBy: text.endIndex) ?? text.endIndex
         return String(text[startIndex..<endIndex])
     }
     
