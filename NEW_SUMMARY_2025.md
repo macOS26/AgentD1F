@@ -1,7 +1,7 @@
 # MultiLineDiff: The World's Most Advanced Diffing System
 ## Revolutionary Features & Capabilities Summary 2025
 
-*All inventions and innovations by Todd Bruss © xcf.ai*
+*All inventions and innovations by Heisenburg © xcf.ai*
 
 ---
 
@@ -367,6 +367,6 @@ This is the **first and only** diffing system that:
 
 ---
 
-*© 2025 Todd Bruss, xcf.ai - All innovations and inventions proprietary*
+*© 2025 Heisenburg, xcf.ai - All innovations and inventions proprietary*
 
 **MultiLineDiff: The Most Advanced Diffing System on Earth** 🌍 

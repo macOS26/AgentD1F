@@ -6,7 +6,7 @@
 **License**: MIT  
 **Language**: Swift 100%  
 **Latest Release**: v1.3.3 (May 25, 2025)  
-**Creator**: Todd Bruss © xcf.ai
+**Creator**: Heisenburg © xcf.ai
 
 ---
 
@@ -508,4 +508,4 @@ print("Diff creation took: \((endTime - startTime) * 1000)ms")
 
 **Ready to revolutionize your diffing workflow with the world's most advanced diffing system!**
 
-*Created by Todd Bruss © 2025 xcf.ai* 
+*Created by Heisenburg © 2025 xcf.ai* 
